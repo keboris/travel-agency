@@ -12,6 +12,11 @@ export default function Searchbar() {
       <h1 className="text-4xl font-bold text-primary">
         Find Your Next Student Adventure
       </h1>
+      <img
+        src="/travel.jpg"
+        alt="Travel Agency"
+        className="w-full h-60 object-cover rounded-box shadow-md"
+      />
       <form
         onSubmit={handleSubmit}
         className="md:join w-full flex flex-col md:flex-row gap-2 md:gap-0 justify-center px-4"
