@@ -10,15 +10,15 @@ export default function Destination() {
   return (
     destination && (
       <div className="max-w-4xl mx-auto px-4 space-y-6">
-        <h1 class="text-4xl font-bold text-primary text-center">
+        <h1 className="text-4xl font-bold text-primary text-center">
           {destination.title}
         </h1>
         <img
           alt={destination.title}
-          class="w-full h-80 object-cover rounded-box shadow-md"
+          className="w-full h-80 object-cover rounded-box shadow-md"
           src={destination.image}
         />
-        <p class="text-lg">{destination.description}</p>
+        <p className="text-lg">{destination.description}</p>
       </div>
     )
   );

@@ -12,7 +12,7 @@ const Destinations = () => {
         <h1 className="text-4xl font-bold mb-4 text-primary">
           Explore All Destinations
         </h1>
-        <p class="text-lg text-base-content">
+        <p className="text-lg text-base-content">
           Discover exciting and affordable travel spots curated just for
           software engineering students.
         </p>

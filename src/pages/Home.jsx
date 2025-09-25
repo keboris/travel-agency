@@ -2,6 +2,7 @@ import { useOutletContext } from "react-router";
 import Searchbar from "../components/Searchbar";
 import WhyBook from "../components/WhyBook";
 import ShowDestinations from "../components/ShowDestinations";
+import Timeline from "../components/Timeline";
 
 const Home = () => {
   const destinations = useOutletContext();
@@ -26,6 +27,13 @@ const Home = () => {
         <div className="grid md:grid-cols-3 gap-6">
           <ShowDestinations destinations={popularDestinations} />
         </div>
+      </section>
+      <section className="space-y-6 px-4">
+        <h2 className="text-3xl font-bold text-secondary text-center">
+          History of the Agency
+        </h2>
+
+        <Timeline />
       </section>
     </div>
   );
