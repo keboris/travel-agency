@@ -1,4 +1,5 @@
 import { useOutletContext, useParams } from "react-router";
+import NotFound from "./NotFound";
 
 export default function Destination() {
   const { slug } = useParams();
@@ -7,6 +8,9 @@ export default function Destination() {
 
   const destination = destinations.find((d) => d.slug === slug);
 
+  if (!destination) {
+    return <NotFound />;
+  }
   return (
     destination && (
       <div className="max-w-4xl mx-auto px-4 space-y-6">

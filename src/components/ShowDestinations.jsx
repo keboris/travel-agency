@@ -29,7 +29,7 @@ export default function ShowDestinations({ destinations }) {
                   className="btn btn-primary"
                   onClick={() => navigate(`/destinations/${destination.slug}`)}
                 >
-                  Visit
+                  Book Now
                 </button>
               </div>
             )}
